@@ -1,0 +1,10 @@
+<h3 appHighlight> {{ product.title | uppercase }}</h3>
+<strong>{{ product.price | currency }}</strong>
+<p> Fecha: {{ today | date: 'long' }} </p>
+<p> Hora:  {{ today | date: 'HH:mm:ss' }} </p>
+<p> Descripción: {{ product.description | slice: 0: 7}} </p>
+<button (click)="addCart()">Agregar al carrito</button>
+<img [src]="product.image" alt="">
+
+
+
