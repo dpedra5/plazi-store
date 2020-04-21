@@ -1,5 +1,4 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-
 import Swiper from 'swiper';
 
 @Component({
