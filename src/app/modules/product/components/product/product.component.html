@@ -3,8 +3,8 @@
 <p> Fecha: {{ today | date: 'long' }} </p>
 <p> Hora:  {{ today | date: 'HH:mm:ss' }} </p>
 <p> Descripción: {{ product.description | slice: 0: 7}} </p>
-<a [routerLink]="['/products', product.id]">Ver detalle</a>
-<button (click)="addCart()">Agregar al carrito</button>
+<a [routerLink]="['/products', product.id]" mat-stroked-button color="primary">Ver detalle</a>
+<button (click)="addCart()" mat-raised-button color="primary">Agregar al carrito</button>
 <img [src]="product.image" alt="">
 
 
