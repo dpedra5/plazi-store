@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
-import { ProductsComponent } from './products/products.component';
-import { ContactComponent} from './contact/contact.component';
-import { DemoComponent } from './demo/demo.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import {ProductDetailComponent} from './product-detail/product-detail.component';
-import { LayoutComponent } from './layout/layout.component';
+import { ProductsComponent } from './modules/products/products.component';
+import { ContactComponent} from './modules/contact/contact.component';
+import { DemoComponent } from './modules/demo/demo.component';
+import { PageNotFoundComponent } from './modules/page-not-found/page-not-found.component';
+import {ProductDetailComponent} from './modules/product-detail/product-detail.component';
+import { LayoutComponent } from './modules/layout/layout.component';
 
 const routes: Routes = [
   {
@@ -19,7 +19,7 @@ const routes: Routes = [
       },
       {
         path: 'home',
-        loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+        loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
       },
       {
         path: 'products',
@@ -53,3 +53,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule {
 }
+
